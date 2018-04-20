@@ -49,10 +49,23 @@ public class Main   {
     
         
         total s = new total();    
-      
         
-         
-         
+        Main o =new Main();
+        o.Account();
+    }
+    
+    public void Account(){
+        fillData fd = new fillData();
+        System.out.println();
+        System.out.println("ACCOUNT");
+        System.out.println("Account Name : " + fd.re()+ " SUPERCAR ");
+        System.out.println("Account No. : 8000-055-5101-90");
+        System.out.println("Call Center : 1700-671626");
+        System.out.println();
+        System.out.println("=========================================");
+        System.out.println("*************** THANK YOU ***************");
+        System.out.println("=========================================");
+
     }
 
 }
