@@ -21,7 +21,7 @@ public abstract class Showroom { // 1 abstract class
  
 }
 
-////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////cola
 // 4 interface
 
 interface first{
@@ -40,9 +40,9 @@ interface forth{
     public void Ford();
 }
 
-////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
 
-class Car extends Showroom implements first,second,third,forth{ //1 concreat class extends abstract class
+class Car extends Showroom implements first,second,third,forth{ 
     
     public void Showroom(){
         System.out.println("=========================================");
@@ -103,11 +103,12 @@ class Car extends Showroom implements first,second,third,forth{ //1 concreat cla
     public void chooseShowroom() {
         
     
-       do{
-          Scanner a = new Scanner(System.in);
-        System.out.print("Select Showroom : ");
-        select = a.nextInt();
-          }while(!(select<=4));
+        do{
+            Scanner a = new Scanner(System.in);
+            System.out.print("Select Showroom : ");
+            select = a.nextInt();
+        }while(!(select <= 4));
+        
         
         if(select == 1){
             Porsche();
@@ -120,14 +121,14 @@ class Car extends Showroom implements first,second,third,forth{ //1 concreat cla
         }
     }
     
-    ////////////////////////////////////////////////////////////////////////////
+    ////////////////////////////////////////cola
     
     public void chooseCar() {
-       do{ 
-          Scanner cC = new Scanner(System.in);
-          System.out.print("Select Car : ");
-          select1 = cC.nextInt();
-         }while(!(select1<=3));
+        do{ 
+            Scanner cC = new Scanner(System.in);
+            System.out.print("Select Car : ");
+            select1 = cC.nextInt();
+        }while(!(select1<=3));
     }
     
     void print() {
@@ -135,7 +136,7 @@ class Car extends Showroom implements first,second,third,forth{ //1 concreat cla
     } 
 } 
     
-////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////cola
 
 class Print extends selectColor {
     void print1() {
