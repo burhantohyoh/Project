@@ -44,7 +44,7 @@ public class fillData extends Showroom{
         Scanner day = new Scanner(System.in);
         System.out.println();
         do{
-        System.out.println("Time to Required:!not more than 20 day");
+        System.out.println("Time to Required (Up to 20 days)");
         System.out.print("How many days : ");
         d = day.nextInt();
         }while(!(d<=20));
@@ -72,7 +72,7 @@ public class fillData extends Showroom{
     
     public void Deposition(){
         if(d <= 10){
-            System.out.println("You have to pay deposition 30%");
+            System.out.println("DEPOSITION 30%");
            
             if(select == 1){
                 if(select1 == 1){
@@ -163,7 +163,7 @@ public class fillData extends Showroom{
         
             }
         }else if(d >= 11 && d<=20){
-            System.out.println("You have to pay deposition 50%");   
+            System.out.println("DEPOSITION 50%");   
             
             if(select == 1){
                 if(select1 == 1){
@@ -255,8 +255,18 @@ public class fillData extends Showroom{
         
     }
     
-    public void Transfer(){
-        System.out.println("");
+    public String re(){
+        String t = null;
+        if(select == 1){
+            t = "PORSCHE";
+        }else if(select == 2){
+            t= "FERRARI";
+        }else if(select == 3){
+            t ="AUDI";
+        }else if(select == 4){
+            t = "FORD";
+        }
+        return t;
     }
 }
 ////////////////////////////////////////////////////////////////////////////////
